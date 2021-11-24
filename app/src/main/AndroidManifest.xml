@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.multiplytwopolynomials">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/math"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/math"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MultiplyTwoPolynomials">
+        <activity
+            android:name=".IterativeVsDivideAndConquer"
+            android:exported="true" />
+        <activity
+            android:name=".ListActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".IterativeActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".DivideAndConquerActivity"
+            android:exported="true"></activity>
+    </application>
+
+</manifest>

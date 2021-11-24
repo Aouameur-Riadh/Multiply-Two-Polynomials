@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListActivity">
+
+
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="16dp"
+
+        android:onClick="onOpenIterative"
+        android:background="@drawable/button"
+        android:text="iterative Algorithm"
+        app:layout_constraintTop_toBottomOf="@+id/img"
+        tools:layout_editor_absoluteX="6dp" />
+
+    <Button
+        android:id="@+id/button_2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="16dp"
+android:onClick="onOpenDivideAndConquer"
+        android:background="@drawable/button"
+        android:text="Divide and Conquer Algorithm"
+        app:layout_constraintTop_toBottomOf="@+id/button_1"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/button_3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="16dp"
+        android:onClick="onOpenIterativeVsDivideAndConquer"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button"
+        android:text="Iterative Vs Divide And Conquer"
+        app:layout_constraintTop_toBottomOf="@+id/button_2"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="142dp"
+        android:layout_height="168dp"
+        android:layout_marginTop="156dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/math" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
